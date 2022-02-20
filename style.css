@@ -24,6 +24,8 @@ body {
 
 .cabecalho {
     background-color: #89CEB4;
+    position: fixed;
+    z-index: 100;
     width: 100%;
     height: 75px;
     display: flex;
@@ -178,26 +180,52 @@ section.fundo-alunos h3 {
 /* CONTATO */
 
 .contato-fundo {
-    display: flex;
     width: 100%;
-    height: 495px;
+    height: 500px;
     background-color: #fff;
 }
 
-.contato-conteudo {
-    width: 621px;
-    height: 246px;
-    margin-left: 104px;
+.contato-titulo {
+    margin-left: 105px;
+    margin-top: 25px;
+    width: 455px;
+    height: 159px;
+}
+
+.icon-contato {
+    width: 56px;
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 7px;
+    margin-right: 20px;
+}
+
+.texto-icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-infos h3 {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.container-infos h3:last-child {
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
 
 
 /* RODAPÉ */
 
 .footer {
+    margin-top: 500px;
     width: 100%;
     height: 75px;
     display: flex;
