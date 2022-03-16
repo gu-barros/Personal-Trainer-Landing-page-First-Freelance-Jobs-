@@ -81,10 +81,6 @@ nav ul li a:hover {
     background: url(/imagens/fundopeso.jpg);
 }
 
-#invert {
-    transform: scaleX(-1);
-}
-
 .frase-fundo {
     margin-top: 170px;
     margin-right: 752px;
@@ -176,24 +172,6 @@ nav ul li a:hover {
     border: 15px solid #8DCFB4;
 }
 
-
-/* ALUNOS - DESATIVADO*/ 
-
-.fundo-alunos {
-    height: 786px;
-    background-image: url(imagens/fundo\ alunos.png);
-    margin-bottom: 25px;
-    display: none; /* display: flex; */
-    justify-content: center;
-}
-
-section.fundo-alunos h3 {
-    font-family: integral-cf;
-    font-size: 60px;
-    font-style: italic;
-    font-weight: 900;
-    margin-top: 25px;
-}
 
 /* PLANOS */
 
