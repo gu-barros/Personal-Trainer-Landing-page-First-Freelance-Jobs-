@@ -103,7 +103,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 .title-seu-mentor {
@@ -115,7 +115,7 @@ nav ul li a:hover {
 
 .title-seu-mentor h1 {
     font-family: Sora;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 800;
     margin-bottom: 10px;
 }
@@ -133,21 +133,21 @@ nav ul li a:hover {
     font-family: 'Sora';
     font-style: normal;
     font-weight: 200;
-    font-size: 24px;
+    font-size: 23px;
 }
 
 .texto h1 {
     font-family: 'Sora';
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .texto h2 {
     font-family: 'Sora';
     font-style: normal;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 34px;
 }
 
 .icons-social {
@@ -157,7 +157,7 @@ nav ul li a:hover {
 }
 
 .icons-social img {
-    width: 38px;
+    width: 35px;
 }
 
 .container-img {
@@ -260,6 +260,25 @@ nav ul li a:hover {
 }
 
 .card button:hover {
+    background: linear-gradient(to left,#89CEB4, #E1AE33 );
+    font-weight: normal;
+}
+
+.butones {
+    background-color: #063825;
+    padding: 1rem 2.5rem;
+    border-radius: 32px;
+    border: 0;
+    text-transform: uppercase;
+    font-family: Sora;
+    font-weight: 800;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+    background: linear-gradient(to right,#89CEB4, #E1AE33 );
+}
+
+.card .butones:hover {
     background: linear-gradient(to left,#89CEB4, #E1AE33 );
     font-weight: normal;
 }
