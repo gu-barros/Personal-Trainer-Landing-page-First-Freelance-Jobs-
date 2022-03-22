@@ -247,24 +247,7 @@ nav ul li a:hover {
     margin-bottom: 25px;
 }
 
-.card button {
-    background-color: #063825;
-    padding: 1rem 2.5rem;
-    border-radius: 32px;
-    border: 0;
-    text-transform: uppercase;
-    font-family: Sora;
-    font-weight: 800;
-    cursor: pointer;
-    background: linear-gradient(to right,#89CEB4, #E1AE33 );
-}
-
-.card button:hover {
-    background: linear-gradient(to left,#89CEB4, #E1AE33 );
-    font-weight: normal;
-}
-
-.butones {
+.btns {
     background-color: #063825;
     padding: 1rem 2.5rem;
     border-radius: 32px;
@@ -278,13 +261,13 @@ nav ul li a:hover {
     background: linear-gradient(to right,#89CEB4, #E1AE33 );
 }
 
-.card .butones:hover {
+.card .btns:hover {
     background: linear-gradient(to left,#89CEB4, #E1AE33 );
     font-weight: normal;
 }
 
-/* CONTATO */
 
+/* CONTATO */
 .contato-fundo {
     display: flex;
     flex-direction: column;
