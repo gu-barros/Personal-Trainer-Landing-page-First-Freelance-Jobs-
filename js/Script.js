@@ -2,11 +2,14 @@
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
+    let headerMod = document.getElementById("header-mod")
+    let headerLogo = document.getElementById("header-logo")
+
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header-mod").style.height = "50px";
-        document.getElementById("header-logo").style.height = "35px";
+        headerMod.style.height = "50px";
+        headerLogo.style.height = "35px";
     } else {
-        document.getElementById("header-mod").style.height = "75px";
-        document.getElementById("header-logo").style.height = "41px";
+        headerMod.style.height = "75px";
+        headerLogo.style.height = "41px";
     }
 }
