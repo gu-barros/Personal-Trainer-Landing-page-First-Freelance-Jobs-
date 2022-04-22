@@ -104,10 +104,22 @@ nav ul li a:hover {
     position: relative;
 }
  
-.poligon-test {
+.poligon01 {
     position: absolute;
     transform: matrix(0.5, 0, 0, 0.5, -230, -150) rotate(30deg);
 }
+
+.poligon02 {
+    position: absolute;
+    width: 147px;
+    transform: rotate(16.5deg) translate(582px, 588px);    
+}
+
+.rotatePoligon {
+    position: absolute;
+    width: 880px;
+    transform: translate(770px, -105px);
+} 
 
 .container-textos {
     width: 50%;
@@ -120,9 +132,20 @@ nav ul li a:hover {
 
 .title-seu-mentor {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    border-bottom: 3px solid black;
+}
+
+.title-seu-mentor::after {
+    content: '';
+    width: 300px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    display: block;
+    margin: 3px auto;
 }
 
 .title-seu-mentor h1 {
@@ -176,13 +199,17 @@ nav ul li a:hover {
     width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container-img img {
-    width: 447px;
+    position: absolute;
+    width: 365px;
     border-radius: 40px;
-    border: 15px solid #8DCFB4;
+    border: 10px solid #8DCFB4;
+    filter: drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.3));
 }
+
 
 
 /* PLANOS */
@@ -218,13 +245,14 @@ nav ul li a:hover {
 }
 
 .card {
+    position: relative;
     background: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-left: 55px;
-    border-radius: 40px;
+    border-radius: 90px;
     padding: 45px;
     width: 369.4px;
     flex-wrap: wrap;
@@ -234,6 +262,22 @@ nav ul li a:hover {
 
 .cards :first-child {
     margin-left: 0;
+}
+
+.testeFundo {
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+}
+
+.testeFundo img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.contentCardZZ {
+    position: absolute;
+    z-index: 3;
 }
 
 .cards .card .icon {
