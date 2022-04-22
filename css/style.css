@@ -101,6 +101,12 @@ nav ul li a:hover {
     padding: 85px 0;
     background-color: #ffffff;
     display: flex;
+    position: relative;
+}
+ 
+.poligon-test {
+    position: absolute;
+    transform: matrix(0.5, 0, 0, 0.5, -230, -150) rotate(30deg);
 }
 
 .container-textos {
