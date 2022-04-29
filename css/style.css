@@ -59,15 +59,33 @@ ul {
 }
 
 nav ul li a {
+    position: relative;
+    text-decoration: none !important;
     border-bottom: 3px solid transparent;
     transition: all ease-in-out;
 }
 
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    text-decoration: none !important;
+    background-color: #000;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: .3s;
+}
+
 nav ul li a:hover {
-    border-bottom: 3px solid black;
-    color:#000; 
+    color:rgb(66, 65, 65); 
     text-decoration:none; 
     cursor:pointer; 
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+    text-decoration: none !important;
 }
 
 .cabecalho-menu-item {
@@ -106,13 +124,17 @@ nav ul li a:hover {
  
 .poligon01 {
     position: absolute;
-    transform: matrix(0.5, 0, 0, 0.5, -230, -150) rotate(30deg);
+    top: -100px;
+    left: -230px;
+    transform: scale(.5, .5) rotate(30deg);
 }
 
 .poligon02 {
     position: absolute;
     width: 147px;
-    transform: rotate(16.5deg) translate(582px, 588px);    
+    left: 300px;
+    top: 580px;
+    transform: rotate(16.5deg);   
 }
 
 .rotatePoligon {
@@ -210,8 +232,6 @@ nav ul li a:hover {
     filter: drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.3));
 }
 
-
-
 /* PLANOS */
 
 .fundo-tudo {
@@ -219,8 +239,9 @@ nav ul li a:hover {
     display: flex;
     background-color: #1F2020;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 25px;
+    padding: 50px;
 }
 
 .fundo-titulo {
@@ -229,6 +250,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 0 25px 0;
 }
 
 .planos-titulo {
@@ -253,7 +275,7 @@ nav ul li a:hover {
     text-align: center;
     margin-left: 55px;
     border-radius: 90px;
-    padding: 45px;
+    padding: 25px;
     width: 369.4px;
     flex-wrap: wrap;
     font-family: Sora;
@@ -267,17 +289,23 @@ nav ul li a:hover {
 .testeFundo {
     z-index: 1;
     position: absolute;
-    width: 300px;
+    width: 335px;
+    top: 30px;
 }
 
 .testeFundo img {
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 .contentCardZZ {
     position: absolute;
     z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 45px;
 }
 
 .cards .card .icon {
@@ -329,9 +357,13 @@ nav ul li a:hover {
 /* CONTATO */
 .contato-fundo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     background-color: #fff;
+}
+
+.container-01-content {
+    width: 50%;
 }
 
 .contato-titulo {
@@ -376,6 +408,17 @@ nav ul li a:hover {
     margin-bottom: 0px;
 }
 
+.container-02-logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-02-logo img {
+    transform: scale(.9);
+}
+
 /* RODAPÉ */
 
 .footer {
@@ -394,7 +437,7 @@ nav ul li a:hover {
 .cabecalho-menu2 {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -411,4 +454,8 @@ nav ul li a:hover {
     font-family: Sora;
     font-weight: 600;
     text-decoration: none;
+}
+
+.arrowIcon {
+    transform: scale(.7);
 }
