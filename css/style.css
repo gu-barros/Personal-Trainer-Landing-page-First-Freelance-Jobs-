@@ -137,11 +137,14 @@ nav ul li a:hover:after {
     transform: rotate(16.5deg);   
 }
 
+/* ----POLIGONO GRANDE ROTATE---- */
 .rotatePoligon {
+    display: none;
     position: absolute;
-    width: 880px;
-    transform: translate(770px, -105px);
+    width: 700px;
+    transform: translate(850px, -70px);
 } 
+/* ----POLIGONO GRANDE ROTATE---- */
 
 .container-textos {
     width: 50%;
@@ -181,7 +184,7 @@ nav ul li a:hover:after {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 30px;
+    gap: 10px;
     font-family: Sora;
 }
 
