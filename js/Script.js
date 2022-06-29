@@ -15,6 +15,21 @@ function scrollFunction() {
     }
 }
 
+// Tirar gap do menu dropdown
+window.onscroll = function () { scrollFunction2() };
+
+function scrollFunction2() {
+    let headerMobile = document.getElementById("menu")
+    
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        headerMobile.style.top = "75px";
+    } else {
+        headerMobile.style.top = "75px";
+        
+    }
+}
+
 // Dropdown Menu 
 const butao = document.getElementById("btn-mobile")
 const nav = document.getElementById("nav")
@@ -26,5 +41,19 @@ function chanceClasses(){
 
 butao.addEventListener('click', chanceClasses)
 
-        
-// mudar a propriedade top do menu quando der scroll down caso isso interfira na versao mobile
+// function para fechar o menu quando clicar em uma das options
+const btn1 = document.getElementById("item1")
+const btn2 = document.getElementById("item2")
+const btn3 = document.getElementById("item3")
+const btn4 = document.getElementById("item4")
+
+
+function backToNormal (){
+    nav.classList.toggle(classNameActive)
+}
+
+btn1.addEventListener('click', backToNormal)
+btn2.addEventListener('click', backToNormal)
+btn3.addEventListener('click', backToNormal)
+btn4.addEventListener('click', backToNormal)
+
