@@ -1,3 +1,4 @@
+
 // Decrease header when scroll down
 window.onscroll = function () { scrollFunction() };
 
@@ -14,5 +15,16 @@ function scrollFunction() {
     }
 }
 
+// Dropdown Menu 
+const butao = document.getElementById("btn-mobile")
+const nav = document.getElementById("nav")
+const classNameActive = "active"
 
+function chanceClasses(){
+    nav.classList.toggle(classNameActive)
+}
 
+butao.addEventListener('click', chanceClasses)
+
+        
+// mudar a propriedade top do menu quando der scroll down caso isso interfira na versao mobile

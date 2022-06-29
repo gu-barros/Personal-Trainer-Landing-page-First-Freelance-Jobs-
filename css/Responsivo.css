@@ -1,0 +1,229 @@
+ 
+ /* notebook pequeno */
+ @media screen and (max-width: 1024px) {
+    
+    .texto p {
+        font-size: 1.8rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .card{
+        margin: 0;
+    }
+    
+    .contato-fundo{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+     .container-01-content {
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .botaTudo{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 0;
+     }
+
+     .container-02-logo {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+ }
+
+ /* Tablet */
+
+ @media  all and (max-width: 768px) {
+     
+    .about-me{
+        padding: 42.5px 0;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .container-textos{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .texto{
+        gap: 25px;
+        align-items: center;
+        padding: 0 70px;
+
+    }
+
+    .texto p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .container-img{
+        width: 100%;
+        height: 500px;
+    }
+ }
+
+ /* Mobile */
+
+ @media all and (max-width: 480px){
+
+    /* Header */
+
+    #menu {
+        /* display: none; */
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        top: 75px;
+        background: #89CEB4;
+        height: 50vh;
+        gap: 55px;
+        z-index: 1000;
+    }
+
+    .cabecalho-menu-item:hover {
+        color:rgb(66, 65, 65); 
+        text-decoration:none; 
+        cursor:pointer; 
+    }
+
+    #btn-mobile {
+        display: block;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        padding: 0 0 0 4rem;
+    }
+
+    #nav.active #menu {
+        display: flex;
+    }
+
+    /* Home */
+
+    .carousel-inner img{
+        height: 60vh;
+    }
+
+    /* Seu Mentor */
+
+    .containerLaranja{
+        position: absolute;
+        top: 65%;
+        width: 100%;
+        height: 35%;
+        background-color: #E1AE33;
+        border-radius: 60px 60px 0px 0px;
+    }
+
+    .containers-all {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-img img {
+        position: absolute;
+        width: 300px;
+        border-radius: 40px;
+        border: 10px solid #8DCFB4;
+        filter: drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.3));
+    }
+
+    /* PLanos */
+
+    .fundo-tudo{
+        padding: 0;
+    }
+
+    .fundo-titulo{
+        margin: 0;
+    }
+
+    .card {
+        transform: scale(.8);
+    }
+
+    .cards {
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .cards .card .icon {
+        width: 180px;
+        height: px;
+        margin-bottom: 25px;
+    }
+
+    .cards .card .infos-planos {
+        font-weight: 400;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .btns{
+        padding: 2rem 8.5rem;
+        font-size: 2rem;
+    }
+
+    /* Contato */
+
+    .titulo-e-imgs-textos {
+        align-items: center;
+    }
+
+    .planos-titulo {
+        transform: scale(.65);
+    }
+
+    .icon-contato{
+        display: none;
+    }
+    
+    .contato-titulo{
+        transform: scale(.7);
+    }
+
+    .container-infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container-infos h3 {
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-infos h3:last-child {
+        margin: 0;
+    }
+
+    .container-02-logo img {
+        transform: scale(.6);
+    }
+ }
