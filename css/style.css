@@ -271,6 +271,7 @@ nav ul li a:hover:after {
 .fundo-tudo {
     width: 100%;
     display: flex;
+    flex-direction: column;
     background-color: #1F2020;
     justify-content: center;
     align-items: center;
@@ -292,6 +293,17 @@ nav ul li a:hover:after {
     display: flex;
 }
 
+/* Planos Button */
+
+.toggle-button {
+    width: 325px;
+    height: 40px;
+    background: #D3D3D3;
+    border-radius: 32px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
 /* PLANOS - CARDS */
 
 .cards {
@@ -308,6 +320,26 @@ nav ul li a:hover:after {
     align-items: center;
     text-align: center;
     margin-left: 55px;
+    border-radius: 90px;
+    padding: 25px;
+    width: 369.4px;
+    flex-wrap: wrap;
+    font-family: Sora;
+    box-shadow: 20px 20px 50px -30px #000;
+}
+
+.cards-personal{
+    margin: 25px;
+}
+
+.card-personal {
+    height: 400px;
+    position: relative;
+    background: #FFF;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     border-radius: 90px;
     padding: 25px;
     width: 369.4px;
@@ -353,6 +385,7 @@ nav ul li a:hover:after {
     font-size: 1.8rem;
     text-align: justify;
     margin-bottom: 25px;
+    max-width: 250px;
 }
 
 .btns {

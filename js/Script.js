@@ -47,7 +47,6 @@ const btn2 = document.getElementById("item2")
 const btn3 = document.getElementById("item3")
 const btn4 = document.getElementById("item4")
 
-
 function backToNormal (){
     nav.classList.toggle(classNameActive)
 }
@@ -57,3 +56,17 @@ btn2.addEventListener('click', backToNormal)
 btn3.addEventListener('click', backToNormal)
 btn4.addEventListener('click', backToNormal)
 
+// Trigger button to switch Cards
+const planosButton = document.getElementById("trigger-btn")
+const cardsConsult = document.querySelector(".cards") 
+const cardsPerso = document.querySelector(".card-personal") 
+
+function triggerButton() {
+    if (cardsConsult.style.display === "flex", cardsPerso.style.display === "none") {
+        cardsConsult.style.display = "none";
+        cardsPerso.style.display = "block";
+    } else {
+        cardsConsult.style.display = "flex";
+        cardsPerso.style.display = "none";
+    }
+  }
