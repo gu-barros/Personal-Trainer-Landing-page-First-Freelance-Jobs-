@@ -58,54 +58,33 @@ btn3.addEventListener("click", backToNormal);
 btn4.addEventListener("click", backToNormal);
 
 // Trigger button to switch Cards
-const consultoriaButton = document.querySelector(".button-consultoria");
-const personalButton = document.querySelector(".button-personal");
 const cardsConsult = document.querySelector(".cards");
 const cardPersonalContainer = document.querySelector(".cards-personal");
-const cardsPerso = document.querySelector(".card-personal");
 
-// juntando as duas funções
+const consultoriaButton = document.querySelector(".button-consultoria");
+const personalButton = document.querySelector(".button-personal");
 
-//  function bothFunctionsPersonal (){
-//     triggerButtonToPersonal();
-//     ativarAnimationToPersonal();
-//  }
+personalButton.addEventListener("click", triggerButtonToPersonal);
+consultoriaButton.addEventListener("click", triggerButtonToCasultoria);
+
 
 // adicionar classe no css onde de toggle p/ ficar com o código mais clean
 function triggerButtonToPersonal() {
-  if (
-    cardsConsult.style.display === "flex" &&
-    cardsPerso.style.display === "none"
-  ) {
-    cardsConsult.style.display = "none";
-    cardsPerso.style.display = "block";
+  if (cardPersonalContainer.classList.contains("no-display")) {
+    cardPersonalContainer.classList.remove("no-display");
+    cardPersonalContainer.classList.add("animar");
+
+    cardsConsult.classList.add("no-display");
+    cardsConsult.classList.remove("animar");
   }
 }
 
 function triggerButtonToCasultoria() {
-  if (
-    cardsConsult.style.display === "none" &&
-    cardsPerso.style.display === "block"
-  ) {
-    cardsConsult.style.display = "flex";
-    cardsPerso.style.display = "none";
-  } else {
-    cardsPerso.style.display = "none";
-    cardsConsult.style.display = "flex";
+  if (cardsConsult.classList.contains("no-display")) {
+    cardsConsult.classList.remove("no-display");
+    cardsConsult.classList.add("animar");
+
+    cardPersonalContainer.classList.add("no-display");
+    cardPersonalContainer.classList.remove("animar");
   }
 }
-
-//   active animation in .cards (consultoria cards)
-
-function ativarAnimationToContulria() {
-  triggerButtonToCasultoria();
-  cardsConsult.classList.toggle("animar");
-}
-consultoriaButton.addEventListener("click", ativarAnimationToContulria);
-
-//   active animation in .cards-personal (personal cards)
-function ativarAnimationToPersonal() {
-  triggerButtonToPersonal();
-  cardPersonalContainer.classList.toggle("animar");
-}
-personalButton.addEventListener("click", ativarAnimationToPersonal);

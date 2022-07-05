@@ -328,20 +328,27 @@ nav ul li a:hover:after {
 
 /* PLANOS - CARDS */
 
-.cards {
+.cards,
+.cards-personal {
   display: flex;
   padding: 0 32px;
   margin: 25px;
 }
 
-.cards.animar {
+.no-display {
+  display: none;
+}
+
+.cards.animar,
+.cards-personal.animar {
   animation-name: slide;
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
 
-.card {
+.card,
+.card-personal {
   position: relative;
   background: #fff;
   display: flex;
@@ -357,34 +364,8 @@ nav ul li a:hover:after {
   box-shadow: 50px 50px 30px -30px #000;
 }
 
-.cards-personal {
-  margin: 25px;
-}
-
-.cards-personal.animar {
-  animation-name: slide;
-  animation-duration: 0.5s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
-
-.card-personal {
-  height: 400px;
-  position: relative;
-  background: #fff;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border-radius: 90px;
-  padding: 25px;
-  width: 369.4px;
-  flex-wrap: wrap;
-  font-family: Sora;
-  box-shadow: 20px 20px 50px -30px #000;
-}
-
-.cards :first-child {
+.cards :first-child,
+.cards-personal :first-child {
   margin-left: 0;
 }
 
