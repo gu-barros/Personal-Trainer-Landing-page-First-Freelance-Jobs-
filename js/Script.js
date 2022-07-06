@@ -1,7 +1,7 @@
 // Decrease header when scroll down
 window.onscroll = function () {
   scrollFunction();
-};
+}
 
 function scrollFunction() {
   let headerMod = document.getElementById("header-mod");
@@ -68,7 +68,6 @@ personalButton.addEventListener("click", triggerButtonToPersonal);
 consultoriaButton.addEventListener("click", triggerButtonToCasultoria);
 
 
-// adicionar classe no css onde de toggle p/ ficar com o código mais clean
 function triggerButtonToPersonal() {
   if (cardPersonalContainer.classList.contains("no-display")) {
     cardPersonalContainer.classList.remove("no-display");

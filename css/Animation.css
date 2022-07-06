@@ -1,6 +1,6 @@
 @keyframes slide {
     from{
-        transform: translate(200px);
+        transform: translate(300px);
         opacity: 0;
     }
     to{

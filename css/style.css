@@ -363,6 +363,10 @@ nav ul li a:hover:after {
   font-family: Sora;
   box-shadow: 50px 50px 30px -30px #000;
 }
+ 
+.card-personal{
+    min-height: 461px;
+}
 
 .cards :first-child,
 .cards-personal :first-child {
