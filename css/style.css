@@ -363,11 +363,10 @@ nav ul li a:hover:after {
   flex-wrap: wrap;
   font-family: Sora;
   box-shadow: 50px 50px 30px -30px #000;
+  min-height: 409.422;
 }
  
-.card-personal{
-    min-height: 461px;
-}
+
 
 .cards :first-child,
 .cards-personal :first-child {
@@ -383,26 +382,26 @@ nav ul li a:hover:after {
 
 .testeFundo img {
   width: 100%;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
-.cards .card .icon {
+.icon {
   width: 180px;
   height: 180px;
   margin-bottom: 25px;
 }
 
-.cards .card .icon img {
+.icon img {
   width: 100%;
 }
 
-.card h3 {
+.card h3, .card-personal h3 {
   margin-bottom: 25px;
   font-weight: 800;
   font-size: 2rem;
 }
 
-.cards .card .infos-planos {
+.infos-planos {
   font-weight: 400;
   font-size: 1.8rem;
   text-align: justify;
