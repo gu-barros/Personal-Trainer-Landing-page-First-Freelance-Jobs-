@@ -248,6 +248,7 @@ nav ul li a:hover:after {
 }
 
 .container-img {
+    height: auto;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -543,5 +544,13 @@ nav ul li a:hover:after {
 }
 
 .arrowIcon {
-  transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.footers-icons a {
+    margin: 0 10px;
+}
+
+.footers-icons img {
+    transform: scale(.7);
 }

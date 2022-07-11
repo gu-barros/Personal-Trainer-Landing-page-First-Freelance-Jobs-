@@ -1,6 +1,6 @@
  
  /* notebook pequeno */
- @media screen and (max-width: 1024px) {
+ @media screen and (min-width: 1500px) {
     
     .texto p {
         font-size: 1.8rem;
@@ -46,44 +46,141 @@
  /* Tablet */
 
  @media  all and (max-width: 768px) {
-     
-    .about-me{
-        padding: 42.5px 0;
+
+    .containerLaranja{
+        position: absolute;
+        top: 65%;
+        width: 100%;
+        height: 35%;
+        background-color: #E1AE33;
+        border-radius: 60px 60px 0px 0px;
+    }
+
+    .containers-all {
+        display: flex;
         flex-direction: column;
-        gap: 25px;
+        width: 100%;
+        gap: 450px;
+    }
+
+    .container-img {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-img img {
+        position: absolute;
+        width: 300px;
+        border-radius: 40px;
+        border: 10px solid #8DCFB4;
+        filter: drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.3));
+        transform: translate(0px, -160px);
     }
 
     .container-textos{
-        margin: 0;
-        padding: 0;
         width: 100%;
         height: 50%;
+        padding: 0;
     }
 
-    .texto{
-        gap: 25px;
+    .texto {
         align-items: center;
-        padding: 0 70px;
-
+        padding: 0 130px;
     }
 
     .texto p {
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
-    .container-img{
-        width: 100%;
-        height: 500px;
+    /* PLanos */
+
+    .fundo-tudo{
+        padding: 0;
     }
- }
+
+    .fundo-titulo{
+        margin: 0;
+    }
+
+    .card,.card-personal {
+        transform: scale(.8);
+    }
+
+    .cards,.cards-personal {
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .cards .card .icon {
+        width: 180px;
+        height: px;
+        margin-bottom: 25px;
+    }
+
+    .cards .card .infos-planos {
+        font-weight: 400;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .btns{
+        padding: 2rem 8.5rem;
+        font-size: 2rem;
+    }
+
+    /* Contato */
+
+    .titulo-e-imgs-textos {
+        align-items: center;
+    }
+
+    .planos-titulo {
+        transform: scale(.65);
+    }
+
+    .icon-contato{
+        display: none;
+    }
+    
+    .contato-titulo{
+        transform: scale(.7);
+    }
+
+    .container-infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container-infos h3 {
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-infos h3:last-child {
+        margin: 0;
+    }
+
+    .container-02-logo img {
+        transform: scale(.6);
+    }
+
+ } 
 
  /* Mobile */
 
- @media all and (max-width: 480px){
+ @media all and (min-width: 600px){
 
     /* Header */
-
     #menu {
         /* display: none; */
         display: none;
@@ -118,14 +215,19 @@
         display: flex;
     }
 
-    /* Home */
+    #nav.active #menu.dropAnimation{
+            animation-name: Dropdown;
+            animation-duration: 0.4s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+    }
 
+    /* Home */
     .carousel-inner img{
         height: 60vh;
     }
 
     /* Seu Mentor */
-
     .containerLaranja{
         position: absolute;
         top: 65%;
@@ -149,6 +251,14 @@
         filter: drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.3));
     }
 
+    .texto {
+        padding: 0 30px;
+    }
+
+    .texto p {
+        font-size: 2.3rem;
+    }
+
     /* PLanos */
 
     .fundo-tudo{
@@ -159,11 +269,11 @@
         margin: 0;
     }
 
-    .card {
+    .card,.card-personal {
         transform: scale(.8);
     }
 
-    .cards {
+    .cards,.cards-personal {
         gap: 0;
         margin: 0;
         padding: 0;
@@ -188,7 +298,6 @@
     }
 
     /* Contato */
-
     .titulo-e-imgs-textos {
         align-items: center;
     }

@@ -34,10 +34,12 @@ function scrollFunction2() {
 // Dropdown Menu
 const butao = document.getElementById("btn-mobile");
 const nav = document.getElementById("nav");
+const menuMobile = document.getElementById("menu");
 const classNameActive = "active";
 
 function chanceClasses() {
   nav.classList.toggle(classNameActive);
+  menuMobile.classList.toggle("dropAnimation");
 }
 
 butao.addEventListener("click", chanceClasses);
