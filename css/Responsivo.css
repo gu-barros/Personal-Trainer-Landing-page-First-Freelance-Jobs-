@@ -275,9 +275,13 @@
 
     .card,.card-personal {
         transform: scale(.8);
+        margin: 0;
     }
 
     .cards,.cards-personal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 0;
         margin: 0;
         padding: 0;
@@ -292,7 +296,7 @@
     .cards .card .infos-planos {
         font-weight: 400;
         font-size: 2rem;
-        text-align: center;
+        text-align: start;
         margin-bottom: 25px;
     }
 
@@ -302,6 +306,15 @@
     }
 
     /* Contato */
+    .contato-fundo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .botaTudo{
+        margin: 0;
+    }
+
     .titulo-e-imgs-textos {
         align-items: center;
     }
@@ -324,6 +337,7 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
+        text-decoration: none !important;
     }
 
     .container-infos h3 {
